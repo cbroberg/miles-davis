@@ -1,0 +1,30 @@
+{
+  "slug": "in-a-silent-way",
+  "status": "published",
+  "id": "album-in-a-silent-way",
+  "_fieldMeta": {},
+  "data": {
+    "title": "In a Silent Way",
+    "year": 1969,
+    "label": "Columbia Records",
+    "era": "electric",
+    "cover": "/uploads/albums/in-a-silent-way.jpg",
+    "summary": "The quiet before the storm of Bitches Brew — electric instruments, meditative drones, and the sound of jazz dissolving into something new.",
+    "personnel": [
+      { "musician": "Miles Davis", "instrument": "Trumpet" },
+      { "musician": "Wayne Shorter", "instrument": "Soprano Saxophone" },
+      { "musician": "Joe Zawinul", "instrument": "Electric Piano, Organ" },
+      { "musician": "Herbie Hancock", "instrument": "Electric Piano" },
+      { "musician": "Chick Corea", "instrument": "Electric Piano" },
+      { "musician": "John McLaughlin", "instrument": "Electric Guitar" },
+      { "musician": "Dave Holland", "instrument": "Double Bass" },
+      { "musician": "Tony Williams", "instrument": "Drums" }
+    ],
+    "tracks": [
+      { "title": "Shhh/Peaceful", "duration": "18:15" },
+      { "title": "In a Silent Way/It's About That Time", "duration": "20:09" }
+    ],
+    "liner_notes": "Recorded in February 1969, *In a Silent Way* is Miles Davis and producer Teo Macero's first fully electric statement. Teo took the day's recordings, sliced them, and rebuilt two side-long suites. Joe Zawinul's title composition became a vaporous drone under which Miles and the ensemble floated. This album is the hinge between the acoustic Second Quintet and the fusion revolution of *Bitches Brew*.",
+    "tags": ["electric", "jazz fusion", "1969", "essential", "columbia"]
+  }
+}

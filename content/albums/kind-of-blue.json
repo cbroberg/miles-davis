@@ -1,0 +1,32 @@
+{
+  "slug": "kind-of-blue",
+  "status": "published",
+  "id": "album-kind-of-blue",
+  "_fieldMeta": {},
+  "data": {
+    "title": "Kind of Blue",
+    "year": 1959,
+    "label": "Columbia Records",
+    "era": "modal",
+    "cover": "/uploads/albums/kind-of-blue.jpg",
+    "summary": "The best-selling jazz album of all time, a landmark in modal jazz that redefined the genre.",
+    "personnel": [
+      { "musician": "Miles Davis", "instrument": "Trumpet" },
+      { "musician": "John Coltrane", "instrument": "Tenor Saxophone" },
+      { "musician": "Cannonball Adderley", "instrument": "Alto Saxophone" },
+      { "musician": "Bill Evans", "instrument": "Piano" },
+      { "musician": "Wynton Kelly", "instrument": "Piano (track 4)" },
+      { "musician": "Paul Chambers", "instrument": "Double Bass" },
+      { "musician": "Jimmy Cobb", "instrument": "Drums" }
+    ],
+    "tracks": [
+      { "title": "So What", "duration": "9:22" },
+      { "title": "Freddie Freeloader", "duration": "9:46" },
+      { "title": "Blue in Green", "duration": "5:37" },
+      { "title": "All Blues", "duration": "11:33" },
+      { "title": "Flamenco Sketches", "duration": "9:26" }
+    ],
+    "liner_notes": "Recorded in two sessions in March and April 1959, *Kind of Blue* was conceived almost entirely through Miles Davis's modal approach — scales rather than chord changes as the basis for improvisation. The album's unhurried tempos and sparse arrangements gave the musicians unprecedented freedom, and the result was a quiet revolution. Evans's impressionistic comping on *So What* and Coltrane's searching lines on *Flamenco Sketches* remain definitive moments in jazz history.",
+    "tags": ["modal jazz", "1959", "essential", "columbia"]
+  }
+}

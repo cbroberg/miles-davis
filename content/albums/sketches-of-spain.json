@@ -1,0 +1,32 @@
+{
+  "slug": "sketches-of-spain",
+  "status": "published",
+  "id": "album-sketches-of-spain",
+  "_fieldMeta": {},
+  "data": {
+    "title": "Sketches of Spain",
+    "year": 1960,
+    "label": "Columbia Records",
+    "era": "modal",
+    "cover": "/uploads/albums/sketches-of-spain.png",
+    "summary": "A collaboration with arranger Gil Evans that dissolves the boundary between jazz and Spanish classical music.",
+    "personnel": [
+      { "musician": "Miles Davis", "instrument": "Trumpet, Flugelhorn" },
+      { "musician": "Gil Evans", "instrument": "Conductor, Arranger" },
+      { "musician": "Elvin Jones", "instrument": "Percussion" },
+      { "musician": "Jimmy Cobb", "instrument": "Drums" },
+      { "musician": "Joe Mondragon", "instrument": "Double Bass" },
+      { "musician": "Ernie Royal", "instrument": "Trumpet" },
+      { "musician": "Bernie Glow", "instrument": "Trumpet" }
+    ],
+    "tracks": [
+      { "title": "Concierto de Aranjuez (Adagio)", "duration": "16:19" },
+      { "title": "Will o' the Wisp", "duration": "3:48" },
+      { "title": "The Pan Piper", "duration": "4:02" },
+      { "title": "Saeta", "duration": "6:14" },
+      { "title": "Solea", "duration": "12:11" }
+    ],
+    "liner_notes": "Miles and Gil Evans's third and most ambitious collaboration, *Sketches of Spain* transposes Joaquín Rodrigo's *Concierto de Aranjuez* and Manuel de Falla's *El amor brujo* into a new language. Over 70 sessions spread across late 1959 and early 1960, Evans built orchestral tapestries around Miles's singing flugelhorn. The result is neither jazz nor classical — it exists in a space Miles carved out alone.",
+    "tags": ["orchestral jazz", "modal", "1960", "essential", "columbia", "gil evans"]
+  }
+}

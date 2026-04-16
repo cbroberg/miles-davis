@@ -1,0 +1,16 @@
+{
+  "slug": "settings",
+  "status": "published",
+  "id": "global-settings",
+  "_fieldMeta": {},
+  "data": {
+    "site_title": "Kind of Blue",
+    "site_subtitle": "Miles Dewey Davis III — 1926–1991",
+    "nav": [
+      { "label": "Albums", "href": "/albums" },
+      { "label": "Eras", "href": "/eras" },
+      { "label": "About", "href": "/about" }
+    ],
+    "footer_text": "Miles Dewey Davis III (May 26, 1926 – September 28, 1991). A tribute site built with @webhouse/cms, Preact, and Tailwind v4."
+  }
+}

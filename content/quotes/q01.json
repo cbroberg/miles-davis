@@ -1,0 +1,11 @@
+{
+  "slug": "q01",
+  "status": "published",
+  "id": "quote-01",
+  "_fieldMeta": {},
+  "data": {
+    "quote": "Don't play what's there, play what's not there.",
+    "source": "Miles Davis",
+    "year": null
+  }
+}

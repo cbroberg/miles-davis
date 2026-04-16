@@ -1,0 +1,39 @@
+{
+  "slug": "bitches-brew",
+  "status": "published",
+  "id": "album-bitches-brew",
+  "_fieldMeta": {},
+  "data": {
+    "title": "Bitches Brew",
+    "year": 1970,
+    "label": "Columbia Records",
+    "era": "electric",
+    "cover": "/uploads/albums/bitches-brew.jpg",
+    "summary": "A watershed double album that invented jazz fusion, combining rock electricity with jazz improvisation.",
+    "personnel": [
+      { "musician": "Miles Davis", "instrument": "Trumpet, Electric Organ" },
+      { "musician": "Wayne Shorter", "instrument": "Soprano Saxophone" },
+      { "musician": "Bennie Maupin", "instrument": "Bass Clarinet" },
+      { "musician": "Joe Zawinul", "instrument": "Electric Piano, Organ" },
+      { "musician": "Chick Corea", "instrument": "Electric Piano" },
+      { "musician": "Larry Young", "instrument": "Electric Piano" },
+      { "musician": "John McLaughlin", "instrument": "Electric Guitar" },
+      { "musician": "Dave Holland", "instrument": "Double Bass, Electric Bass" },
+      { "musician": "Harvey Brooks", "instrument": "Electric Bass" },
+      { "musician": "Lenny White", "instrument": "Drums" },
+      { "musician": "Jack DeJohnette", "instrument": "Drums" },
+      { "musician": "Don Alias", "instrument": "Percussion" },
+      { "musician": "Juma Santos", "instrument": "Percussion" }
+    ],
+    "tracks": [
+      { "title": "Pharaoh's Dance", "duration": "20:05" },
+      { "title": "Bitches Brew", "duration": "26:58" },
+      { "title": "Spanish Key", "duration": "17:32" },
+      { "title": "John McLaughlin", "duration": "4:22" },
+      { "title": "Miles Runs the Voodoo Down", "duration": "14:01" },
+      { "title": "Sanctuary", "duration": "10:56" }
+    ],
+    "liner_notes": "Recorded over three days in August 1969, *Bitches Brew* is the sound of Miles Davis dismantling the future and reassembling it with electric instruments and studio tape manipulation. Producer Teo Macero's editing — splicing, looping, overdubbing — created a new kind of sonic architecture. The album launched the careers of Wayne Shorter, Chick Corea, John McLaughlin, and Herbie Hancock, who were all transformed by the experience.",
+    "tags": ["jazz fusion", "electric", "1970", "essential", "columbia"]
+  }
+}

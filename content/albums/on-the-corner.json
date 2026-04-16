@@ -1,0 +1,39 @@
+{
+  "slug": "on-the-corner",
+  "status": "published",
+  "id": "album-on-the-corner",
+  "_fieldMeta": {},
+  "data": {
+    "title": "On the Corner",
+    "year": 1972,
+    "label": "Columbia Records",
+    "era": "electric",
+    "cover": "/uploads/albums/on-the-corner.jpg",
+    "summary": "Miles's most radical statement — Sly Stone funk, Stockhausen density, and street-corner groove collide.",
+    "personnel": [
+      { "musician": "Miles Davis", "instrument": "Trumpet, Electric Organ" },
+      { "musician": "Carlos Garnett", "instrument": "Soprano & Tenor Saxophone" },
+      { "musician": "Bennie Maupin", "instrument": "Alto Saxophone, Bass Clarinet" },
+      { "musician": "Herbie Hancock", "instrument": "Electric Piano" },
+      { "musician": "Chick Corea", "instrument": "Electric Piano" },
+      { "musician": "John McLaughlin", "instrument": "Electric Guitar" },
+      { "musician": "Collin Walcott", "instrument": "Sitar" },
+      { "musician": "Michael Henderson", "instrument": "Electric Bass" },
+      { "musician": "Jack DeJohnette", "instrument": "Drums" },
+      { "musician": "Billy Hart", "instrument": "Drums" },
+      { "musician": "Al Foster", "instrument": "Drums" }
+    ],
+    "tracks": [
+      { "title": "On the Corner", "duration": "8:59" },
+      { "title": "New York Girl", "duration": "4:04" },
+      { "title": "Thinkin' One Thing and Doin' Another", "duration": "4:38" },
+      { "title": "Vote for Miles", "duration": "3:47" },
+      { "title": "Black Satin", "duration": "9:45" },
+      { "title": "One and One", "duration": "5:19" },
+      { "title": "Helen Butte", "duration": "9:20" },
+      { "title": "Mr. Freedom X", "duration": "5:07" }
+    ],
+    "liner_notes": "Critics hated it. Columbia didn't understand it. But *On the Corner* was Miles firing a flare into the future. Conceived as a response to Sly Stone and James Brown, designed to reach young Black audiences, it was assembled by Teo Macero from hours of studio improvisation. Cyclical, polyrhythmic, relentless — it has no parallel in the jazz canon.",
+    "tags": ["electric", "funk", "avant-garde", "1972", "columbia"]
+  }
+}

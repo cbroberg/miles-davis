@@ -1,0 +1,40 @@
+{
+  "slug": "birth-of-the-cool",
+  "status": "published",
+  "id": "album-birth-of-the-cool",
+  "_fieldMeta": {},
+  "data": {
+    "title": "Birth of the Cool",
+    "year": 1957,
+    "label": "Capitol Records",
+    "era": "birth-of-the-cool",
+    "cover": "/uploads/albums/birth-of-the-cool.jpg",
+    "summary": "Compiled from 1949–1950 sessions, this album named an entire movement and introduced orchestral colour to small-group jazz.",
+    "personnel": [
+      { "musician": "Miles Davis", "instrument": "Trumpet" },
+      { "musician": "Kai Winding", "instrument": "Trombone" },
+      { "musician": "Junior Collins", "instrument": "French Horn" },
+      { "musician": "Bill Barber", "instrument": "Tuba" },
+      { "musician": "Lee Konitz", "instrument": "Alto Saxophone" },
+      { "musician": "Gerry Mulligan", "instrument": "Baritone Saxophone" },
+      { "musician": "Al Haig", "instrument": "Piano" },
+      { "musician": "Joe Shulman", "instrument": "Double Bass" },
+      { "musician": "Max Roach", "instrument": "Drums" }
+    ],
+    "tracks": [
+      { "title": "Move", "duration": "3:15" },
+      { "title": "Jeru", "duration": "3:03" },
+      { "title": "Moon Dreams", "duration": "3:23" },
+      { "title": "Venus de Milo", "duration": "3:18" },
+      { "title": "Budo", "duration": "2:53" },
+      { "title": "Deception", "duration": "2:50" },
+      { "title": "Godchild", "duration": "3:01" },
+      { "title": "Boplicity", "duration": "2:58" },
+      { "title": "Rocker", "duration": "2:52" },
+      { "title": "Israel", "duration": "2:42" },
+      { "title": "Rouge", "duration": "2:56" }
+    ],
+    "liner_notes": "These recordings from 1949–1950 gathered in a 12-piece nonet became the blueprint for West Coast cool jazz. Arranged by Gil Evans, Gerry Mulligan, and John Lewis, the music replaced bebop's frenetic energy with a contemplative, orchestral voice. Miles's playing — lyrical, spacious, never wasting a note — set the template for everything that followed.",
+    "tags": ["cool jazz", "1957", "essential", "capitol"]
+  }
+}
