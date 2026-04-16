@@ -3,8 +3,7 @@ import preact from '@preact/preset-vite'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  // Set base to '/repo-name/' for GitHub Pages project sites, or '/' for custom domains
-  base: '/',
+  base: '/miles-davis/',
   plugins: [
     tailwindcss(),
     preact({
