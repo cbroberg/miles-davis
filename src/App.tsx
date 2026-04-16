@@ -13,8 +13,8 @@ interface AppProps {
 
 export function App({ url }: AppProps) {
   return (
-    <Router url={url}>
-      <Layout>
+    <Layout>
+      <Router url={url}>
         <Route path="/" component={Home} />
         <Route path="/albums" component={Albums} />
         <Route path="/eras" component={Eras} />
@@ -42,7 +42,7 @@ export function App({ url }: AppProps) {
             </div>
           )}
         />
-      </Layout>
-    </Router>
+      </Router>
+    </Layout>
   )
 }
