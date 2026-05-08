@@ -6,6 +6,7 @@ import { AlbumDetail } from './pages/AlbumDetail'
 import { EraDetail } from './pages/EraDetail'
 import { Eras } from './pages/Eras'
 import { About } from './pages/About'
+import { Discography } from './pages/Discography'
 
 interface AppProps {
   url?: string
@@ -30,6 +31,7 @@ export function App({ url }: AppProps) {
             <EraDetail slug={params?.slug ?? ''} />
           )}
         />
+        <Route path="/discography" component={Discography} />
         <Route path="/about" component={About} />
         <Route
           default

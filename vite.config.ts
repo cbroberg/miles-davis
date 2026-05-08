@@ -25,6 +25,7 @@ export default defineConfig({
           '/eras/hard-bop',
           '/eras/modal',
           '/eras/electric',
+          '/discography',
         ],
         previewMiddlewareEnabled: true,
         previewMiddlewareFallback: '/404.html',

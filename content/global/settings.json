@@ -8,6 +8,7 @@
     "site_subtitle": "Miles Dewey Davis III — 1926–1991",
     "nav": [
       { "label": "Albums", "href": "/albums" },
+      { "label": "Discography", "href": "/discography" },
       { "label": "Eras", "href": "/eras" },
       { "label": "About", "href": "/about" }
     ],
