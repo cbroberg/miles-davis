@@ -255,3 +255,9 @@ export const DISCOGRAPHY: DiscographyEntry[] = [
     artwork: "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/56/a2/f4/56a2f46e-b3ab-6650-75ab-bb2ff5664a64/075992693899.jpg/500x500bb.jpg",
   },
 ]
+
+const _byTitle = new Map(DISCOGRAPHY.map(e => [e.title.toLowerCase(), e]))
+
+export function lookupAppleMusic(title: string): string | undefined {
+  return _byTitle.get(title.toLowerCase())?.appleMusic
+}

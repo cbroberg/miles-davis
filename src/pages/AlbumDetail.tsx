@@ -1,5 +1,6 @@
 import { getAlbum, getAlbums, coverUrl } from '../lib/content'
 import { renderMarkdown } from '../lib/markdown'
+import { lookupAppleMusic } from '../data/discography'
 
 interface Props {
   slug: string
@@ -18,6 +19,7 @@ export function AlbumDetail({ slug }: Props) {
   }
 
   const { data } = album
+  const amUrl = lookupAppleMusic(data.title)
 
   return (
     <div style="max-width:1100px;margin:0 auto;padding:4rem 1.5rem">
@@ -64,9 +66,25 @@ export function AlbumDetail({ slug }: Props) {
           <p style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:#b8962e;margin-bottom:0.5rem">
             {data.year} · {data.label}
           </p>
-          <h1 style="font-family:var(--font-serif);font-size:clamp(2rem,5vw,3rem);color:#e8e4d9;margin:0 0 1rem;line-height:1.15">
+          <h1 style="font-family:var(--font-serif);font-size:clamp(2rem,5vw,3rem);color:#e8e4d9;margin:0 0 1.25rem;line-height:1.15">
             {data.title}
           </h1>
+
+          {amUrl && (
+            <a
+              href={amUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style="display:inline-flex;align-items:center;gap:0.5rem;font-size:0.8125rem;letter-spacing:0.06em;color:#c8a84e;border:1px solid #4a3e18;padding:0.5rem 1.125rem;text-decoration:none;margin-bottom:2rem;transition:color 0.15s,border-color 0.15s,background 0.15s"
+              onMouseEnter={(e) => { const el = e.currentTarget as HTMLAnchorElement; el.style.color='#e8c870'; el.style.borderColor='#7a6020'; el.style.background='#1a1710' }}
+              onMouseLeave={(e) => { const el = e.currentTarget as HTMLAnchorElement; el.style.color='#c8a84e'; el.style.borderColor='#4a3e18'; el.style.background='transparent' }}
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.726-.69c-.49-.09-.987-.128-1.48-.144-.35-.01-.7-.01-1.05-.01H6.668c-.35 0-.7 0-1.05.01-.49.016-.99.055-1.48.144a5.023 5.023 0 00-1.726.69C1.296 1.624.55 2.624.234 3.934a9.23 9.23 0 00-.24 2.19C-.006 6.474 0 6.824 0 7.174v9.66c0 .35.006.7.016 1.05.017.49.055.99.144 1.48.317 1.31 1.062 2.31 2.18 3.043a5.023 5.023 0 001.726.69c.49.09.99.128 1.48.144.35.01.7.01 1.05.01h10.662c.35 0 .7 0 1.05-.01.49-.016.99-.055 1.48-.144a5.022 5.022 0 001.726-.69c1.118-.733 1.863-1.733 2.18-3.043.09-.49.128-.99.144-1.48.01-.35.016-.7.016-1.05V7.174c0-.35-.006-.7-.022-1.05zM11.977 17.75l-4.978-2.9v-5.8l4.978-2.9 4.978 2.9v5.8l-4.978 2.9z"/>
+              </svg>
+              Lyt på Apple Music ↗
+            </a>
+          )}
 
           {data.summary && (
             <p style="font-size:1.0625rem;color:#a09a8c;line-height:1.7;margin:0 0 2.5rem">
