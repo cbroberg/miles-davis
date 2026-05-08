@@ -39,3 +39,9 @@ export function getGlobal(): GlobalSettings | null {
   const docs = published<GlobalSettings>(globalFiles)
   return docs[0]?.data ?? null
 }
+
+export function coverUrl(path: string | undefined): string | undefined {
+  if (!path) return undefined
+  if (!path.startsWith('/')) return path
+  return (import.meta.env.BASE_URL ?? '/').replace(/\/$/, '') + path
+}

@@ -1,4 +1,4 @@
-import { getAlbums } from '../lib/content'
+import { getAlbums, coverUrl } from '../lib/content'
 import { AlbumCover } from '../components/AlbumCover'
 
 export function Albums() {
@@ -23,7 +23,7 @@ export function Albums() {
             <div style="aspect-ratio:1;background:#1a1a1a;border:1px solid #2a2820;margin-bottom:1rem;overflow:hidden;position:relative">
               {album.data.cover ? (
                 <img
-                  src={album.data.cover}
+                  src={coverUrl(album.data.cover)}
                   alt={album.data.title}
                   loading="lazy"
                   style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s"

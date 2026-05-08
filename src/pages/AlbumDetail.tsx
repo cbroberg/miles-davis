@@ -1,4 +1,4 @@
-import { getAlbum, getAlbums } from '../lib/content'
+import { getAlbum, getAlbums, coverUrl } from '../lib/content'
 import { renderMarkdown } from '../lib/markdown'
 
 interface Props {
@@ -34,7 +34,7 @@ export function AlbumDetail({ slug }: Props) {
         <div>
           <div style="aspect-ratio:1;background:#1a1a1a;border:1px solid #2a2820;overflow:hidden">
             {data.cover ? (
-              <img src={data.cover} alt={data.title} style="width:100%;height:100%;object-fit:cover;display:block" />
+              <img src={coverUrl(data.cover)} alt={data.title} style="width:100%;height:100%;object-fit:cover;display:block" />
             ) : (
               <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1rem">
                 <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
