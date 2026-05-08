@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'preact/hooks'
-import { getEras, getQuotes } from '../lib/content'
+import { getEras, getQuotes, getAlbums, coverUrl } from '../lib/content'
 
 export function Home() {
   const eras = getEras()
   const quotes = getQuotes()
+  const albums = getAlbums()
   const [quoteIndex, setQuoteIndex] = useState(0)
 
   // Rotate quotes every 8 seconds
@@ -137,29 +138,32 @@ export function Home() {
         </div>
 
         <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:1.5rem">
-          {/* Static teaser — links to albums page */}
-          {[
-            { title: 'Kind of Blue', year: 1959, slug: 'kind-of-blue' },
-            { title: 'Bitches Brew', year: 1970, slug: 'bitches-brew' },
-            { title: 'Birth of the Cool', year: 1957, slug: 'birth-of-the-cool' },
-            { title: 'Sketches of Spain', year: 1960, slug: 'sketches-of-spain' },
-            { title: 'In a Silent Way', year: 1969, slug: 'in-a-silent-way' },
-            { title: 'On the Corner', year: 1972, slug: 'on-the-corner' },
-          ].map(album => (
-            <a key={album.slug} href={`/albums/${album.slug}`} style="display:block;group">
+          {albums.map(album => (
+            <a key={album.slug} href={`/albums/${album.slug}`} style="display:block">
               <div style="aspect-ratio:1;background:#1a1a1a;border:1px solid #2a2820;margin-bottom:0.75rem;overflow:hidden;position:relative">
-                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <circle cx="20" cy="20" r="16" stroke="#2a2820" stroke-width="1"/>
-                    <circle cx="20" cy="20" r="5" fill="#2a2820"/>
-                  </svg>
-                </div>
+                {album.data.cover ? (
+                  <img
+                    src={coverUrl(album.data.cover)}
+                    alt={album.data.title}
+                    loading="lazy"
+                    style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s"
+                    onMouseEnter={(e) => ((e.target as HTMLImageElement).style.transform = 'scale(1.04)')}
+                    onMouseLeave={(e) => ((e.target as HTMLImageElement).style.transform = 'scale(1)')}
+                  />
+                ) : (
+                  <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                      <circle cx="20" cy="20" r="16" stroke="#2a2820" stroke-width="1"/>
+                      <circle cx="20" cy="20" r="5" fill="#2a2820"/>
+                    </svg>
+                  </div>
+                )}
               </div>
               <p style="font-family:var(--font-serif);font-size:0.9375rem;color:#e8e4d9;margin:0 0 0.25rem;line-height:1.3">
-                {album.title}
+                {album.data.title}
               </p>
               <p style="font-size:0.75rem;color:#8a8478;margin:0">
-                {album.year}
+                {album.data.year}
               </p>
             </a>
           ))}
