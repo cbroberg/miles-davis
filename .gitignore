@@ -2,3 +2,10 @@ node_modules/
 dist/
 .cache/
 *.local
+
+# cardmem — secret-bearing files, never commit
+.mcp.json
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
